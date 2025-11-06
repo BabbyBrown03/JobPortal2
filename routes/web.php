@@ -28,3 +28,5 @@ require __DIR__.'/auth.php';
 
 Route::get('/send-mail', [SendEmailController::class,
 'index'])->name('kirim-email');
+
+Route::post('/post-email', [SendEmailController::class, 'store'])->name('post-email');
